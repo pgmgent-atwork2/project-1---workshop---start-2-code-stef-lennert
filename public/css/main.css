@@ -1,0 +1,77 @@
+:root {
+    --light: #FAFCFF;
+    --bright: #fff;
+    --medium: #fafafa;
+    --primary: #004cff;
+    --secondary: #ffd500;
+    : #ff0033;
+    --gold: #FFD700;
+    --general: #000080;
+    --dark: #1d1d1d;
+    --spacing-sm: 0.5rem;
+    --spacing-base: 1rem;
+    --spacing-md: 2rem;
+    --spacing-lg: 7rem;
+    --spacing-xl: 10rem;
+    --rounded-base: 1.5rem;
+    --text-base: 1rem;
+    --text-md: 1.5rem;
+    --text-lg: 2rem;
+    --text-xl: 4rem;
+}
+
+body {
+    background-color: var(--gold);
+}
+
+header {
+    background-color: var(--general);
+    color: var(--bright);
+    padding: var(--spacing-sm);
+    text-align: center;
+    font-size: var(--text-base);
+    font-weight: bold;
+    font-family: var(--font-family);
+}
+
+.content {
+    color: var(--general);
+}
+
+.gif {
+    width: 50%;
+    height: 50%;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    background-color: var(--primary);
+    color: var(--bright);
+    padding: var(--spacing-sm);
+    margin-bottom: var(--spacing-base);
+    text-align: center;
+    border-radius: var(--rounded-base);
+    border: none;
+    cursor: pointer;
+    width: 10%;
+}
+
+.button:hover {
+    background-color: var(--danger);
+}
+
+a {
+    color: var(--bright);
+    text-decoration: none;
+}
+
+footer {
+    background-color: var(--general);
+    color: var(--bright);
+    padding: var(--spacing-sm);
+    text-align: center;
+    font-size: var(--text-base);
+    font-weight: bold;
+    font-family: var(--font-family);
+}
