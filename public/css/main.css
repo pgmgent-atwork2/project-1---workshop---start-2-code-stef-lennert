@@ -29,13 +29,14 @@ header {
     color: var(--bright);
     padding: var(--spacing-sm);
     text-align: center;
-    font-size: var(--text-base);
     font-weight: bold;
-    font-family: var(--font-family);
+    border-radius: 16px;
 }
 
 .content {
+    width: 100vh;
     color: var(--general);
+    padding: var(--spacing-base);
 }
 
 .gif {
@@ -43,27 +44,35 @@ header {
     height: 50%;
 }
 
-.button {
-    display: flex;
-    justify-content: center;
-    background-color: var(--primary);
-    color: var(--bright);
-    padding: var(--spacing-sm);
-    margin-bottom: var(--spacing-base);
-    text-align: center;
-    border-radius: var(--rounded-base);
-    border: none;
+button {
+    appearance: button;
+    background-color: #1899D6;
+    border: solid transparent;
+    border-radius: 16px;
+    color: #FFFFFF;
     cursor: pointer;
-    width: 10%;
+    display: inline-block;
+    font-family: din-round, sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: .8px;
+    line-height: 20px;
+    margin-bottom: var(--spacing-base);
+    padding: 13px 16px;
 }
 
-.button:hover {
-    background-color: var(--danger);
-}
-
-a {
+.button-link {
     color: var(--bright);
     text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+video {
+    width: 70%;
+    height: 70%;
 }
 
 footer {
@@ -71,7 +80,6 @@ footer {
     color: var(--bright);
     padding: var(--spacing-sm);
     text-align: center;
-    font-size: var(--text-base);
     font-weight: bold;
-    font-family: var(--font-family);
+    border-radius: 16px;
 }
