@@ -1,49 +1,101 @@
+@font-face {
+  font-family: "Dongle";
+  src: url('../font/Dongle Bold.woff2') format('woff2'),
+    url('../font/Dongle Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: "Dongle-Regular";
+  src: url('../font/Dongle Regular.woff2') format('woff2'),
+    url('../font/Dongle Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: Regular;
+}
+
+@font-face {
+  font-family: "Dongle-Light";
+  src: url('../font/Dongle Light.woff2') format('woff2'),
+    url('../font/Dongle Light.woff') format('woff');
+  font-weight: normal;
+  font-style: Light;
+}
+
 :root {
-    --light: #FAFCFF;
-    --bright: #fff;
-    --medium: #fafafa;
-    --primary: #004cff;
-    --secondary: #ffd500;
-    : #ff0033;
-    --background: #ddc3b2;
-    --general: #1cb0f6;
-    --text: black;
-    --dark: #1d1d1d;
-    --spacing-sm: 0.5rem;
-    --spacing-base: 1rem;
-    --spacing-md: 2rem;
-    --spacing-lg: 7rem;
-    --spacing-xl: 10rem;
-    --rounded-base: 1.5rem;
-    --text-base: 1rem;
-    --text-md: 1.5rem;
-    --text-lg: 2rem;
-    --text-xl: 4rem;
+  --light: #FAFCFF;
+  --bright: #fff;
+  --medium: #fafafa;
+  --primary: #004cff;
+  --secondary: #ffd500;
+  : #ff0033;
+  --background: #ddc3b2;
+  --general: #1cb0f6;
+  --text: black;
+  --dark: #1d1d1d;
+  --spacing-sm: 0.5rem;
+  --spacing-base: 1rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 7rem;
+  --spacing-xl: 10rem;
+  --rounded-base: 1.5rem;
+  --text-base: 1rem;
+  --text-md: 1.5rem;
+  --text-lg: 2rem;
+  --text-xl: 4rem;
 }
 
 body {
-    background-color: var(--background);
+  background-color: var(--background);
 }
 
 header {
   border: solid transparent;
-    background-color: var(--general);
-    color: var(--bright);
-    padding: var(--spacing-sm);
-    text-align: center;
-    font-weight: bold;
-    border-radius: 1rem;
+  background-color: var(--general);
+  color: var(--bright);
+  height: 5rem;
+  text-align: center;
+  border-radius: 1rem;
+}
+
+h1 {
+  font-family: Dongle;
+  font-size: 4rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-family: Dongle-Regular;
+  font-size: 3rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h3 {
+  font-family: Dongle-Regular;
+  font-size: 2rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+p {
+  font-family: Dongle-Light;
+  font-size:2rem;
+  line-height: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .content {
-    width: 100vh;
-    color: var(--text);
-    padding: var(--spacing-base);
+  width: 100vh;
+  color: var(--text);
+  padding: var(--spacing-base);
 }
 
 .gif {
-    width: 50%;
-    height: 50%;
+  width: 50%;
+  height: 50%;
 }
 
 button {
@@ -92,24 +144,24 @@ button:hover:not(:disabled) {
 }
 
 .button-link {
-    color: var(--bright);
-    text-decoration: none;
+  color: var(--bright);
+  text-decoration: none;
 }
 
 a:hover {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 video {
-    width: 70%;
-    height: 70%;
+  width: 70%;
+  height: 70%;
 }
 
 footer {
-    background-color: var(--general);
-    color: var(--bright);
-    padding: var(--spacing-sm);
-    text-align: center;
-    font-weight: bold;
-    border-radius: 16px;
+  background-color: var(--general);
+  color: var(--bright);
+  padding: var(--spacing-sm);
+  text-align: center;
+  font-weight: bold;
+  border-radius: 16px;
 }
