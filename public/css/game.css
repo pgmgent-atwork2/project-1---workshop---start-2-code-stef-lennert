@@ -1,5 +1,5 @@
 body {
-  background-image: url("../../public/images/wood-g5fc0da959_1920.jpg")
+  background-image: url("../../public/images/wood-g5fc0da959_1920.jpg");
 }
 
 h1 {
@@ -31,6 +31,8 @@ h1 {
   width: 8rem;
   float:right;
   margin-right: 3rem;
+  background-color: black;
+  border-radius: 1rem;
 }
 
 .score-x-score {
@@ -50,6 +52,22 @@ border-bottom: solid white;
 
 .grid-cell:not(.disabled):hover {
   background: #C1DDFF;
+}
+
+.grid-cell:not(.disabled):first-child:hover {
+  border-top-left-radius: 1rem;
+}
+
+.grid-cell:not(.disabled):nth-child(3):hover {
+  border-top-right-radius: 1rem;
+}
+
+.grid-cell:not(.disabled):nth-last-child(3):hover {
+  border-bottom-left-radius: 1rem;
+}
+
+.grid-cell:not(.disabled):last-child:hover {
+  border-bottom-right-radius: 1rem;
 }
 
 .grid-cell:nth-child(-n + 3) {
@@ -81,6 +99,7 @@ border-bottom: solid white;
 }
 
 .game-over {
+  border-radius: 1rem;
   display: none;
   position: absolute;
   top: 50%;
@@ -105,28 +124,23 @@ button {
   appearance: button;
   background-color: #1899D6;
   border: solid transparent;
-  border-radius: 16px;
-  border-width: 0 0 4px;
+  border-radius: 1rem;
+  border-width: 0 0 0.25rem;
   box-sizing: border-box;
   color: #FFFFFF;
   cursor: pointer;
   display: inline-block;
   font-family: din-round, sans-serif;
-  font-size: 15px;
+  font-size: 0.938rem;
   font-weight: 700;
-  letter-spacing: .8px;
-  line-height: 20px;
+  line-height: 1.25rem;
   margin: 0;
-  outline: none;
-  overflow: visible;
-  padding: 13px 16px;
+  padding: 0.813rem 1rem;
   text-align: center;
   text-transform: uppercase;
   touch-action: manipulation;
   transform: translateZ(0);
   transition: filter .2s;
-  user-select: none;
-  -webkit-user-select: none;
   vertical-align: middle;
   white-space: nowrap;
   width: 100%;
@@ -136,9 +150,9 @@ button:after {
   background-clip: padding-box;
   background-color: #1CB0F6;
   border: solid transparent;
-  border-radius: 16px;
-  border-width: 0 0 4px;
-  bottom: -4px;
+  border-radius: 1rem;
+  border-width: 0 0 0.25rem;
+  bottom: -0.25rem;
   content: "";
   left: 0;
   position: absolute;
@@ -147,18 +161,8 @@ button:after {
   z-index: -1;
 }
 
-button:main,
-button:focus {
-  user-select: auto;
-}
-
 button:hover:not(:disabled) {
   filter: brightness(1.1);
-  -webkit-filter: brightness(1.1);
-}
-
-button:disabled {
-  cursor: auto;
 }
 
 .reset {
@@ -167,6 +171,7 @@ button:disabled {
   margin-top: 6rem;
   margin-right: -9rem;
 }
+
 
 
 .visible {
