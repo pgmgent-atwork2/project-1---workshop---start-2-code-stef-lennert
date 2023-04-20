@@ -88,9 +88,9 @@ p {
 }
 
 .content {
-  width: 100vh;
+  max-width: 100vh;
   color: var(--text);
-  padding: var(--spacing-base);
+  padding: 3rem;
 }
 
 .gif {
